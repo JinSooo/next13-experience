@@ -7,11 +7,12 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+
 	return (
 		<html lang="en">
-			<body>
+			<body data-theme="dark">
 				<RootHeader />
-				{children}
+				<div style={{ height: `calc(100vh - 60px)` }}>{children}</div>
 			</body>
 		</html>
 	)
