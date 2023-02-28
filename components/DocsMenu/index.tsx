@@ -5,7 +5,7 @@ import React, { Fragment } from 'react'
 import { useRouter } from 'next/navigation'
 import TestButton from '../TestButton'
 
-export default function DocsMenu({ docsPath }: { docsPath: DocPath[] }) {
+export default function DocsMenu({ docsPath = [] }: { docsPath: DocPath[] }) {
 	const router = useRouter()
 
 	const to = (route: string) => {
